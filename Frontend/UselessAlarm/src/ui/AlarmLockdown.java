@@ -22,6 +22,7 @@ public class AlarmLockdown {
             }
         }
     }
+
     public void showGUI() {
         JFrame frame = new JFrame("Wake Up!");
         JLabel puzzleImageLabel = new JLabel("Loading CAPTCHA...");
@@ -48,10 +49,6 @@ public class AlarmLockdown {
         JLabel warningLabel = new JLabel("ALARM ACTIVE. SOLVE TO DISABLE.");
         warningLabel.setForeground(Config.BG_PANIC);
         warningLabel.setFont(Config.MAIN_FONT);
-
-        JLabel puzzleLabel = new JLabel("Awaiting puzzle from Python backend...");
-        puzzleLabel.setForeground(Config.TEXT_COLOR);
-        puzzleLabel.setFont(Config.INPUT_FONT);
 
         // Live Failure Counter Label
         JLabel attemptsLabel = new JLabel("Attempts Failed: 0");
@@ -109,9 +106,10 @@ public class AlarmLockdown {
         });
 
         gbc.gridy = 0; frame.add(warningLabel, gbc);
-        gbc.gridy = 1; frame.add(puzzleLabel, gbc);
-        gbc.gridy = 2; frame.add(inputField, gbc);
-        gbc.gridy = 3; frame.add(submitButton, gbc);
+        gbc.gridy = 1; frame.add(puzzleImageLabel, gbc);
+        gbc.gridy = 2; frame.add(attemptsLabel, gbc);
+        gbc.gridy = 3; frame.add(inputField, gbc);
+        gbc.gridy = 4; frame.add(submitButton, gbc);
 
         frame.setVisible(true);
         inputField.requestFocus();
