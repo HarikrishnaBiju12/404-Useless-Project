@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="UselessAlarm:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UselessAlarm_jar</output-path>
+    <root id="archive" name="UselessAlarm.jar">
+      <element id="module-output" name="UselessAlarm" />
+    </root>
+  </artifact>
+</component>
