@@ -10,7 +10,7 @@
 
 
 ### Team Members
-- Team Lead: Niranjan BS - TKM College of Engineering
+- Member 1: Niranjan BS - TKM College of Engineering
 - Member 2: Harikrishna B - TKM College of Engineering
 
 ### Project Description
