@@ -59,18 +59,22 @@ For Software:
 # Screenshots
 
 <img width="943" height="728" alt="image" src="https://github.com/user-attachments/assets/0dab9bfe-537e-44a1-88ed-e7cde3607f2d" />
+
 - Opens a server terminal window running the Flask backend on port 5000.
 - Prints real-time [DEBUG] logs to the console showing the expected CAPTCHA text, user inputs, and match statuses.
 - Controls audio execution, handling background alarm playback and injecting random meme intermissions on failed attempts.
 
 <img width="1390" height="281" alt="image" src="https://github.com/user-attachments/assets/1ae3662c-a9b4-444e-8f5b-fd9d25c5c42d" />
+
 - Continuously scans operating system processes to check if the Java alarm app is active.
 - Automatically respawns UselessAlarm.jar the instant it detects the application has been closed or killed.
 
 <img width="546" height="303" alt="image" src="https://github.com/user-attachments/assets/6b0b83d1-be4f-49eb-b6ef-661899f1f8db" />
+
 - UI to set the time for the alarm.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d6de4f14-7995-4c9d-ace8-c2ce6f3df582" />
+
 - Pops up as a full-screen, undecorated, always-on-top window that aggressively steals screen focus back if clicked away from.
 - Displays a blurry, mixed-case CAPTCHA image alongside a live counter tracking success and failure progress.
 - Automatically disarms, stops audio, and closes itself once the user successfully completes the 5-solve victory condition.
@@ -82,6 +86,7 @@ The system operates entirely on the local PC through three interconnected proces
 ### Project Demo
 # Video
 https://drive.google.com/file/d/1znDFe36A-T3BD5JWbfSGHWFo5QLyHz_u/view?usp=sharing
+
 This video showcases the UselessAlarm project in full lockdown mode. It begins with the Python watchdog script successfully monitoring and launching the Java GUI. Once the interface opens, the user is trapped in a full-screen window with a blaring alarm, forced to solve a CAPTCHA. As the user intentionally inputs incorrect answers, the system triggers the meme punishment loop, flashing the screen red and playing jarring audio clips. The failure counter dynamically updates with each wrong attempt, and after three failures, the UI taunts the user with the message, "WARNING: BRAIN CELLS EVAPORATING.".
 
 
